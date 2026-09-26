@@ -1,10 +1,239 @@
-<!DOCTYPE html>
-<html>
+<html lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FADE IN LIGHT</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/lucide-static@latest/font/lucide.css" />
+
+    <link href="style.css" rel="stylesheet">
+</head>
+
+
+<script>
+    //TODO remove dev test
+
+    //TODO remove dev test
+    (function () {
+        'use strict';
+        setInterval(function () {
+            looocation.reload();
+        }, 3000);
+    })();
+
+    //TODO remove dev test
+</script>
+
 <body>
+    <!-- Navigation fixe -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#">
+                <img class="nav-logo" src="fade-in-light - w-b.svg" />
+                <!-- <div class="logo">FADE IN LIGHT</div> -->
+            </a>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#references">Références</a></li>
+                <li><a href="#methods">Méthodes</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<h1>so long</h1>
-<p>and thanks for all the fish.</p>
+    <!-- Hero avec effet -->
+    <section id="accueil" class="hero">
+        <div class="hero-bg">
+            <div class="hero-shapes"></div>
+        </div>
+        <div class="container hero-content">
+            <img class="hero-logo" src="fade-in-light - w-b.svg" />
+            <h1 class="">FADE IN LIGHT</h1>
+            <p class="subtitle ">Événementiel et technologies</p>
+            <a href="#contact" class="cta-btn">Contact</a>
+        </div>
+    </section>
 
+    <!-- Services -->
+    <section id="services" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Nos Capacités</h2>
+            <p class="section-intro">Nous vous accompagnons dans la réflexion stratégique et
+                technique de vos projets.</p>
+            <div id="services-container">
+                <div class="services-category">
+                    <h3>Scénographie &amp; Structures</h3>
 
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <div class="icon-drafting-compass"></div>
+                        </div>
+                        <div class="service-content">
+                            <h4>Étude et implantation</h4>
+                            <p>Conception de structures scéniques adaptées aux contraintes des lieux.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <div class="icon-robot-arm"></div>
+                        </div>
+                        <div class="service-content">
+                            <h4>Réalisation technique</h4>
+                            <p>Montage et habillage scénique avec attention aux normes de sécurité.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services-category">
+                    <h3>Lumière, Vidéo &amp; Immersion</h3>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <div class="icon-lightbulb"></div>
+                        </div>
+                        <div class="service-content">
+                            <h4>Création visuelle</h4>
+                            <p>Conception de plans de feux et d'univers lumineux sur-mesure.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <div class="icon-video"></div>
+                        </div>
+                        <div class="service-content">
+                            <h4>Dispositifs vidéo avancés</h4>
+                            <p>Gestion de captations, diffusion sur écrans géants, mapping vidéo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services-category">
+                    <h3>Ingénierie Audio</h3>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <div class="icon-audio-waveform"></div>
+                        </div>
+                        <div class="service-content">
+                            <h4>Systèmes de diffusion</h4>
+                            <p>Étude acoustique et sonorisation pour concerts et conférences.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services-category">
+                    <h3>Pilotage Logistique</h3>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <div class="icon-van"></div>
+                        </div>
+                        <div class="service-content">
+                            <h4>Planification</h4>
+                            <p>Coordination des plannings de montage et démontage.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Références -->
+    <section id="references" class="section">
+        <div class="container">
+            <h2 class="section-title">Nos Références</h2>
+            <p class="section-intro">Nous travaillons avec les références du métier, du matériel fiable et
+                pour tous les budgets.</p>
+            <div id="equipment-container"></div>
+            <h2 class="section-title">Ils nous font confiance</h2>
+            <div class="flex-center">
+                <a href="https://v2sound.be/"><img class="reference-logo" src="v2sound.jpg"></img></a>
+                <img class="reference-logo" src="uesm.jpg"></img>
+                <img class="reference-logo" src="cardijn.png"></img>
+            </div>
+        </div>
+    </section>
+
+    <!-- Méthodes -->
+    <section id="methods" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Nos Méthodes</h2>
+            <div id="methods-container" class="methods-timeline">
+                <div class="method-item" data-step="1">
+                    <h3>Étude des besoins</h3>
+                    <p>Nous étudions vos besoins avec précision.</p>
+                </div>
+
+                <div class="method-item" data-step="2">
+                    <h3>Étude des lieux</h3>
+                    <p>Nous concevons nos plans avec des marges de sécurité importantes.</p>
+                </div>
+
+                <div class="method-item" data-step="3">
+                    <h3>Prévisualisation 3D</h3>
+                    <p>Rendus 3D détaillés et réalistes.</p>
+                </div>
+
+                <div class="method-item" data-step="4">
+                    <h3>Besoins matériels</h3>
+                    <p>Établissement des besoins matériels et humains.</p>
+                </div>
+
+                <div class="method-item" data-step="5">
+                    <h3>Devis</h3>
+                    <p>Détermination des coûts préliminaires.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2 class="section-title">Réalisations</h2>
+            <div id="portfolio-grid" class="portfolio-grid">
+                <p style="text-align: center; color: var(--text-muted);">Aucune réalisation pour le moment.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-intro">Pour discuter de votre projet, contactez-nous :</p>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <div class="icon-mail"></div>
+                    <span id="contact-email">juliensilance@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <div class="icon-phone"></div>
+                    <span id="contact-phone">+32 489 14 43 39</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2026 - FADE IN LIGHT</p>
+        </div>
+    </footer>
 </body>
+
 </html>
